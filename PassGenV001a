@@ -16,10 +16,9 @@ public class PassGenV001a {
         
         System.out.println("Enter the number of characters for your password");
         int pSize = myInput.nextInt();
+        String[] myPassword = new String[pSize];
         
         System.out.println("Your Password is:");
-        
-        String[] myPassword = new String[pSize];
         
         for (int i = 0; i < myPassword.length; i++){
             int k = myRandom.nextInt(charDB.length);
